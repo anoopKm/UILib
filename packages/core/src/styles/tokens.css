@@ -1,0 +1,129 @@
+:root {
+  /* ── Color Palette ── */
+  --ui-color-primary: #2563eb;
+  --ui-color-primary-hover: #1d4ed8;
+  --ui-color-primary-active: #1e40af;
+  --ui-color-primary-light: #dbeafe;
+  --ui-color-primary-foreground: #ffffff;
+
+  --ui-color-secondary: #64748b;
+  --ui-color-secondary-hover: #475569;
+  --ui-color-secondary-active: #334155;
+  --ui-color-secondary-light: #f1f5f9;
+  --ui-color-secondary-foreground: #ffffff;
+
+  --ui-color-error: #dc2626;
+  --ui-color-error-hover: #b91c1c;
+  --ui-color-error-light: #fee2e2;
+  --ui-color-error-foreground: #ffffff;
+
+  --ui-color-warning: #f59e0b;
+  --ui-color-warning-hover: #d97706;
+  --ui-color-warning-light: #fef3c7;
+  --ui-color-warning-foreground: #ffffff;
+
+  --ui-color-success: #16a34a;
+  --ui-color-success-hover: #15803d;
+  --ui-color-success-light: #dcfce7;
+  --ui-color-success-foreground: #ffffff;
+
+  --ui-color-info: #0ea5e9;
+  --ui-color-info-hover: #0284c7;
+  --ui-color-info-light: #e0f2fe;
+  --ui-color-info-foreground: #ffffff;
+
+  /* ── Neutral Palette ── */
+  --ui-color-bg: #ffffff;
+  --ui-color-bg-subtle: #f8fafc;
+  --ui-color-bg-muted: #f1f5f9;
+  --ui-color-surface: #ffffff;
+  --ui-color-border: #e2e8f0;
+  --ui-color-border-hover: #cbd5e1;
+  --ui-color-text: #0f172a;
+  --ui-color-text-secondary: #475569;
+  --ui-color-text-muted: #94a3b8;
+  --ui-color-text-inverse: #ffffff;
+  --ui-color-overlay: rgba(0, 0, 0, 0.4);
+
+  /* ── Typography ── */
+  --ui-font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+  --ui-font-family-mono: "JetBrains Mono", ui-monospace, "Cascadia Code", "Fira Code", Menlo,
+    Monaco, Consolas, monospace;
+
+  --ui-font-size-xs: 0.75rem;
+  --ui-font-size-sm: 0.875rem;
+  --ui-font-size-md: 1rem;
+  --ui-font-size-lg: 1.125rem;
+  --ui-font-size-xl: 1.25rem;
+  --ui-font-size-2xl: 1.5rem;
+  --ui-font-size-3xl: 1.875rem;
+  --ui-font-size-4xl: 2.25rem;
+
+  --ui-font-weight-normal: 400;
+  --ui-font-weight-medium: 500;
+  --ui-font-weight-semibold: 600;
+  --ui-font-weight-bold: 700;
+
+  --ui-line-height-tight: 1.25;
+  --ui-line-height-normal: 1.5;
+  --ui-line-height-relaxed: 1.75;
+
+  --ui-letter-spacing-tight: -0.025em;
+  --ui-letter-spacing-normal: 0em;
+  --ui-letter-spacing-wide: 0.025em;
+
+  /* ── Spacing (4px base) ── */
+  --ui-space-0: 0;
+  --ui-space-px: 1px;
+  --ui-space-0-5: 0.125rem;
+  --ui-space-1: 0.25rem;
+  --ui-space-1-5: 0.375rem;
+  --ui-space-2: 0.5rem;
+  --ui-space-2-5: 0.625rem;
+  --ui-space-3: 0.75rem;
+  --ui-space-4: 1rem;
+  --ui-space-5: 1.25rem;
+  --ui-space-6: 1.5rem;
+  --ui-space-8: 2rem;
+  --ui-space-10: 2.5rem;
+  --ui-space-12: 3rem;
+  --ui-space-16: 4rem;
+
+  /* ── Border Radius ── */
+  --ui-radius-none: 0;
+  --ui-radius-sm: 4px;
+  --ui-radius-md: 6px;
+  --ui-radius-lg: 8px;
+  --ui-radius-xl: 12px;
+  --ui-radius-2xl: 16px;
+  --ui-radius-full: 9999px;
+
+  /* ── Shadows ── */
+  --ui-shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --ui-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+  --ui-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+  --ui-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
+  --ui-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+
+  /* ── Z-Index Scale ── */
+  --ui-z-dropdown: 100;
+  --ui-z-sticky: 200;
+  --ui-z-overlay: 300;
+  --ui-z-modal: 400;
+  --ui-z-popover: 500;
+  --ui-z-tooltip: 600;
+
+  /* ── Transitions ── */
+  --ui-duration-fast: 100ms;
+  --ui-duration-normal: 200ms;
+  --ui-duration-slow: 300ms;
+  --ui-easing-default: cubic-bezier(0.4, 0, 0.2, 1);
+  --ui-easing-in: cubic-bezier(0.4, 0, 1, 1);
+  --ui-easing-out: cubic-bezier(0, 0, 0.2, 1);
+
+  /* ── Focus Ring ── */
+  --ui-ring-width: 2px;
+  --ui-ring-color: rgba(37, 99, 235, 0.5);
+  --ui-ring-offset: 2px;
+}

@@ -1,0 +1,46 @@
+/* Dark theme - apply via data-theme="dark" on html or any container */
+[data-theme="dark"] {
+  --ui-color-primary: #3b82f6;
+  --ui-color-primary-hover: #60a5fa;
+  --ui-color-primary-active: #93bbfd;
+  --ui-color-primary-light: #1e3a5f;
+
+  --ui-color-secondary: #94a3b8;
+  --ui-color-secondary-hover: #cbd5e1;
+  --ui-color-secondary-light: #1e293b;
+
+  --ui-color-error: #f87171;
+  --ui-color-error-hover: #fca5a5;
+  --ui-color-error-light: #450a0a;
+
+  --ui-color-warning: #fbbf24;
+  --ui-color-warning-hover: #fcd34d;
+  --ui-color-warning-light: #451a03;
+
+  --ui-color-success: #4ade80;
+  --ui-color-success-hover: #86efac;
+  --ui-color-success-light: #052e16;
+
+  --ui-color-info: #38bdf8;
+  --ui-color-info-hover: #7dd3fc;
+  --ui-color-info-light: #0c4a6e;
+
+  --ui-color-bg: #0f172a;
+  --ui-color-bg-subtle: #1e293b;
+  --ui-color-bg-muted: #334155;
+  --ui-color-surface: #1e293b;
+  --ui-color-border: #334155;
+  --ui-color-border-hover: #475569;
+  --ui-color-text: #f1f5f9;
+  --ui-color-text-secondary: #cbd5e1;
+  --ui-color-text-muted: #64748b;
+  --ui-color-overlay: rgba(0, 0, 0, 0.6);
+
+  --ui-shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.2);
+  --ui-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
+  --ui-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -2px rgba(0, 0, 0, 0.2);
+  --ui-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -4px rgba(0, 0, 0, 0.2);
+  --ui-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.2);
+
+  --ui-ring-color: rgba(59, 130, 246, 0.5);
+}

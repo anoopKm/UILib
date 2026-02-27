@@ -1,0 +1,62 @@
+.ui-tooltip__trigger {
+  display: inline-flex;
+}
+
+.ui-tooltip {
+  position: absolute;
+  z-index: var(--ui-z-tooltip);
+  padding: var(--ui-space-1-5) var(--ui-space-2-5);
+  background-color: var(--ui-color-text);
+  color: var(--ui-color-text-inverse);
+  font-family: var(--ui-font-family);
+  font-size: var(--ui-font-size-xs);
+  font-weight: var(--ui-font-weight-medium);
+  line-height: var(--ui-line-height-normal);
+  border-radius: var(--ui-radius-md);
+  white-space: nowrap;
+  pointer-events: none;
+  animation: ui-tooltip-in var(--ui-duration-fast) var(--ui-easing-out);
+}
+
+.ui-tooltip__arrow {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: var(--ui-color-text);
+  transform: rotate(45deg);
+}
+
+.ui-tooltip--top .ui-tooltip__arrow {
+  bottom: -4px;
+  left: 50%;
+  margin-left: -4px;
+}
+
+.ui-tooltip--bottom .ui-tooltip__arrow {
+  top: -4px;
+  left: 50%;
+  margin-left: -4px;
+}
+
+.ui-tooltip--left .ui-tooltip__arrow {
+  right: -4px;
+  top: 50%;
+  margin-top: -4px;
+}
+
+.ui-tooltip--right .ui-tooltip__arrow {
+  left: -4px;
+  top: 50%;
+  margin-top: -4px;
+}
+
+@keyframes ui-tooltip-in {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

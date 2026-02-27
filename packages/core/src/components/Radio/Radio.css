@@ -1,0 +1,87 @@
+.ui-radio-group {
+  display: flex;
+  gap: var(--ui-space-3);
+}
+
+.ui-radio-group--vertical {
+  flex-direction: column;
+}
+
+.ui-radio-group--horizontal {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.ui-radio {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--ui-space-2);
+  cursor: pointer;
+  font-family: var(--ui-font-family);
+  user-select: none;
+}
+
+.ui-radio--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.ui-radio__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.ui-radio__control {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--ui-color-border);
+  border-radius: var(--ui-radius-full);
+  background-color: var(--ui-color-bg);
+  transition:
+    background-color var(--ui-duration-fast) var(--ui-easing-default),
+    border-color var(--ui-duration-fast) var(--ui-easing-default);
+  flex-shrink: 0;
+}
+
+.ui-radio--sm .ui-radio__control { width: 16px; height: 16px; }
+.ui-radio--md .ui-radio__control { width: 18px; height: 18px; }
+.ui-radio--lg .ui-radio__control { width: 22px; height: 22px; }
+
+.ui-radio__dot {
+  border-radius: var(--ui-radius-full);
+  background-color: var(--ui-color-primary-foreground);
+  transform: scale(0);
+  transition: transform var(--ui-duration-fast) var(--ui-easing-default);
+}
+
+.ui-radio--sm .ui-radio__dot { width: 6px; height: 6px; }
+.ui-radio--md .ui-radio__dot { width: 8px; height: 8px; }
+.ui-radio--lg .ui-radio__dot { width: 10px; height: 10px; }
+
+.ui-radio__input:checked ~ .ui-radio__control {
+  background-color: var(--ui-color-primary);
+  border-color: var(--ui-color-primary);
+}
+
+.ui-radio__input:checked ~ .ui-radio__control .ui-radio__dot {
+  transform: scale(1);
+}
+
+.ui-radio__input:focus-visible ~ .ui-radio__control {
+  outline: var(--ui-ring-width) solid var(--ui-ring-color);
+  outline-offset: var(--ui-ring-offset);
+}
+
+.ui-radio__label {
+  font-size: var(--ui-font-size-sm);
+  color: var(--ui-color-text);
+  line-height: var(--ui-line-height-normal);
+}
+
+.ui-radio--sm .ui-radio__label { font-size: var(--ui-font-size-xs); }
+.ui-radio--lg .ui-radio__label { font-size: var(--ui-font-size-md); }

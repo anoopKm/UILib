@@ -1,0 +1,80 @@
+.ui-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--ui-space-2);
+  cursor: pointer;
+  font-family: var(--ui-font-family);
+  user-select: none;
+}
+
+.ui-switch--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.ui-switch__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.ui-switch__track {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  border-radius: var(--ui-radius-full);
+  background-color: var(--ui-color-bg-muted);
+  border: 1px solid var(--ui-color-border);
+  transition:
+    background-color var(--ui-duration-normal) var(--ui-easing-default),
+    border-color var(--ui-duration-normal) var(--ui-easing-default);
+  flex-shrink: 0;
+}
+
+.ui-switch--sm .ui-switch__track { width: 32px; height: 18px; }
+.ui-switch--md .ui-switch__track { width: 40px; height: 22px; }
+.ui-switch--lg .ui-switch__track { width: 48px; height: 26px; }
+
+.ui-switch__thumb {
+  position: absolute;
+  border-radius: var(--ui-radius-full);
+  background-color: white;
+  box-shadow: var(--ui-shadow-sm);
+  transition: transform var(--ui-duration-normal) var(--ui-easing-default);
+}
+
+.ui-switch--sm .ui-switch__thumb { width: 14px; height: 14px; left: 1px; }
+.ui-switch--md .ui-switch__thumb { width: 18px; height: 18px; left: 1px; }
+.ui-switch--lg .ui-switch__thumb { width: 22px; height: 22px; left: 1px; }
+
+.ui-switch__input:checked ~ .ui-switch__track {
+  background-color: var(--ui-color-primary);
+  border-color: var(--ui-color-primary);
+}
+
+.ui-switch--sm .ui-switch__input:checked ~ .ui-switch__track .ui-switch__thumb {
+  transform: translateX(14px);
+}
+.ui-switch--md .ui-switch__input:checked ~ .ui-switch__track .ui-switch__thumb {
+  transform: translateX(18px);
+}
+.ui-switch--lg .ui-switch__input:checked ~ .ui-switch__track .ui-switch__thumb {
+  transform: translateX(22px);
+}
+
+.ui-switch__input:focus-visible ~ .ui-switch__track {
+  outline: var(--ui-ring-width) solid var(--ui-ring-color);
+  outline-offset: var(--ui-ring-offset);
+}
+
+.ui-switch__label {
+  font-size: var(--ui-font-size-sm);
+  color: var(--ui-color-text);
+  line-height: var(--ui-line-height-normal);
+}
+
+.ui-switch--sm .ui-switch__label { font-size: var(--ui-font-size-xs); }
+.ui-switch--lg .ui-switch__label { font-size: var(--ui-font-size-md); }
