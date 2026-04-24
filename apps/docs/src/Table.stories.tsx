@@ -25,7 +25,7 @@ export const Default: Story = {
     <Table {...args}>
       <TableHead>
         <TableRow>
-          <TableHeaderCell>Name</TableHeaderCell>
+          <TableHeaderCell>Name:</TableHeaderCell>
           <TableHeaderCell>Email</TableHeaderCell>
           <TableHeaderCell>Role</TableHeaderCell>
         </TableRow>
